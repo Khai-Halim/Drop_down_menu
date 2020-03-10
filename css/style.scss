@@ -41,9 +41,19 @@ nav{
         //Drop down nav
         .li-drop{
             padding: 10px 15px;
+            
             cursor: pointer;
             &:hover{
                 background: $blue;
+            }
+            &::after{
+                content: "";
+                display: inline-block;
+                height: 15px;
+                width: 10px;
+                background: url("/img/arrow.png")center/cover no-repeat;
+                margin-left: 5px;
+                transform: translate(0, 2px);
             }
             ul{
                 display: none;
@@ -71,6 +81,8 @@ nav{
         }
     }
 }
+
+
 
 
 

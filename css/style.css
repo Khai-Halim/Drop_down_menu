@@ -71,6 +71,17 @@ nav #ul-main .li-drop:hover {
   background: #2f96f7;
 }
 
+nav #ul-main .li-drop::after {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 10px;
+  background: url("/img/arrow.png") center/cover no-repeat;
+  margin-left: 5px;
+  -webkit-transform: translate(0, 2px);
+          transform: translate(0, 2px);
+}
+
 nav #ul-main .li-drop ul {
   display: none;
   position: absolute;
