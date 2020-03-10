@@ -1,5 +1,78 @@
+@import "colors";
+@import "genericClasses";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    #logo{
+        font-weight: bold;
+        
+        order: 2;
+        a{
+            display: block;
+            text-decoration: none;
+            color: $white;
+            padding: 10px;
+        }
+    }
+    #ul-main{ order: 1;
+        //main nav
+        li{
+            color: $white;
+            display: inline-block;
+            position: relative;
+            a{
+                display: block;
+                text-decoration: none;
+                padding: 10px 15px;
+                color: $white;
+                &:hover{
+                    background: $blue;
+                }
+            }      
+        }
+        //Drop down nav
+        .li-drop{
+            padding: 10px 15px;
+            cursor: pointer;
+            &:hover{
+                background: $blue;
+            }
+            ul{
+                display: none;
+                position: absolute;
+                background: $blue-dark;
+                li{
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        width: 200px;
+                        flex: 1;
+                        padding: 10px 20px 10px 10px;
+                        
+                        &:hover{
+                            background: $blue;
+                        }
+                    }
+                }
+            }
+            &:hover ul{
+                display: block;
+                top: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+
+
+
+

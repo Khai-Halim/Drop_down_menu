@@ -1,7 +1,104 @@
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.background-1 {
+  background: #004fe2;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav #logo {
+  font-weight: bold;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+nav #logo a {
+  display: block;
+  text-decoration: none;
+  color: #f3f3f3;
+  padding: 10px;
+}
+
+nav #ul-main {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+nav #ul-main li {
+  color: #f3f3f3;
+  display: inline-block;
+  position: relative;
+}
+
+nav #ul-main li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #f3f3f3;
+}
+
+nav #ul-main li a:hover {
+  background: #2f96f7;
+}
+
+nav #ul-main .li-drop {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+nav #ul-main .li-drop:hover {
+  background: #2f96f7;
+}
+
+nav #ul-main .li-drop ul {
+  display: none;
+  position: absolute;
+  background: #004fe2;
+}
+
+nav #ul-main .li-drop ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 20px 10px 10px;
+}
+
+nav #ul-main .li-drop ul li a:hover {
+  background: #2f96f7;
+}
+
+nav #ul-main .li-drop:hover ul {
+  display: block;
+  top: 100%;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
